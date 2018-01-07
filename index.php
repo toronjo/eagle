@@ -27,13 +27,7 @@ function showProjects(str) {
 <body>
 
 <form>
-<select name="pm" onchange="showProjects(this.value)">
-  <option value="F">Select a person:</option>
-  <option value="a">PMs con letra a</option>
-  <option value="b">PMs con letra b</option>
-  <option value="c">PMs con letra c</option>
-  <option value="d">PMs con letra d</option>
-  </select>
+  <input type="text" name="pm" onkeypress="showProjects(this.value)">
 </form>
 <br>
 <div id="txtHint"><b>Person info will be listed here...</b></div>
